@@ -1,113 +1,159 @@
-# 🗳️ sistema de gerenciamento eleitoral
-
 <div align="center">
 
-### 💻 CRUD • PHP • MYSQL • PDO
+#  🖥️ sistema de gerenciamento eleitoral
 
-**sistema web desenvolvido para gerenciamento de eleitores e candidatos**
+### ✦ CRUD • PHP • MYSQL • PDO ✦
 
-[📌 sobre o projeto](#-sobre-o-projeto) •
-[⚙️ funcionalidades](#️-funcionalidades) •
-[🗂️ estrutura](#️-estrutura-do-projeto) •
-[🚀 como executar](#-como-executar) •
-[👥 equipe](#-equipe)
+<img src="https://img.shields.io/badge/PHP-9b7ede?style=for-the-badge&logo=php&logoColor=white">
+<img src="https://img.shields.io/badge/MySQL-b89ae6?style=for-the-badge&logo=mysql&logoColor=white">
+<img src="https://img.shields.io/badge/CRUD-c8b6e8?style=for-the-badge">
+<img src="https://img.shields.io/badge/SCRUM-a78bca?style=for-the-badge">
+
+<br><br>
+
+>  um sistema web desenvolvido para o gerenciamento de  
+> **eleitores e candidatos**, utilizando php e mysql.
+
+<br>
+
+<a href="#-sobre-o-projeto">
+<img src="https://img.shields.io/badge/✨_sobre_o_projeto-c8b6e8?style=for-the-badge">
+</a>
+
+<a href="#-funcionalidades">
+<img src="https://img.shields.io/badge/⚙️_funcionalidades-b89ae6?style=for-the-badge">
+</a>
+
+<a href="#-estrutura">
+<img src="https://img.shields.io/badge/📁_estrutura-d8c7ed?style=for-the-badge">
+</a>
+
+<a href="#-como-executar">
+<img src="https://img.shields.io/badge/🚀_executar-a78bca?style=for-the-badge">
+</a>
 
 </div>
 
 ---
 
-## ✨ sobre o projeto
+## 💜 sobre o projeto
 
-o **sistema de gerenciamento eleitoral** foi desenvolvido como atividade do **SAEP – desenvolvimento de sistemas**, com o objetivo de aplicar na prática conhecimentos de **desenvolvimento web, banco de dados, segurança e gestão ágil de projetos**.
+<details>
+<summary><b>✨ clique aqui para conhecer o projeto</b></summary>
 
-a aplicação permite realizar o gerenciamento de informações relacionadas a **eleitores e candidatos**, utilizando o conceito de **CRUD**:
+<br>
 
-> 🟢 **create** → cadastrar  
-> 🔵 **read** → consultar  
-> 🟡 **update** → atualizar  
-> 🔴 **delete** → excluir
+o **sistema de gerenciamento eleitoral** foi desenvolvido como atividade do **saep – desenvolvimento de sistemas**, com o objetivo de aplicar conhecimentos de desenvolvimento web, banco de dados, segurança e gestão ágil.
 
-o projeto foi desenvolvido utilizando **php + mysql**, com comunicação através do **pdo** e utilização de **prepared statements**, contribuindo para uma aplicação mais organizada e segura. :contentReference[oaicite:1]{index=1}
+a aplicação permite o gerenciamento de informações relacionadas a:
+
+- 👤 eleitores
+- 🗳️ candidatos
+- 🔗 relacionamento entre registros
+- 🗄️ banco de dados
+
+o sistema utiliza o conceito de **crud**:
+
+| ação | significado |
+|---|---|
+| 🟣 create | cadastrar |
+| 🔵 read | consultar |
+| 🟡 update | atualizar |
+| 🔴 delete | excluir |
+
+</details>
 
 ---
 
-## 🎯 objetivo
+## ✨ tecnologias
 
-desenvolver uma aplicação web capaz de organizar e gerenciar dados eleitorais de maneira estruturada, permitindo o cadastro, consulta, edição e exclusão de registros de **eleitores e candidatos**.
+<div align="center">
 
-o banco de dados possui duas entidades principais:
+| 💜 tecnologia | 🎯 utilização |
+|:---:|---|
+| 🐘 **php** | processamento da aplicação |
+| 🐬 **mysql** | armazenamento dos dados |
+| 🔗 **pdo** | comunicação com o banco |
+| 🔐 **prepared statements** | segurança |
+| 🔄 **crud** | gerenciamento dos registros |
+| 📋 **scrum** | organização da equipe |
 
-- 👤 **eleitores**
-- 🗳️ **candidatos**
-
-os registros possuem relacionamentos e restrições para manter a integridade das informações armazenadas. :contentReference[oaicite:2]{index=2}
+</div>
 
 ---
 
 ## ⚙️ funcionalidades
 
-### 👤 gerenciamento de eleitores
+<details>
+<summary>👤 <b>gerenciamento de eleitores</b></summary>
 
-- ➕ cadastrar eleitor
-- 🔎 consultar eleitores
-- ✏️ editar informações
-- 🗑️ excluir eleitor
-- 🔗 associar eleitor a um candidato
+<br>
 
-### 🗳️ gerenciamento de candidatos
+➕ cadastro de eleitor  
+🔎 consulta de eleitor  
+✏️ edição de informações  
+🗑️ exclusão de eleitor  
+🔗 associação com candidato  
 
-- ➕ cadastrar candidato
-- 🔎 consultar candidatos
-- ✏️ editar informações
-- 🗑️ excluir candidato
+</details>
 
-### 🔐 segurança e banco de dados
+<br>
 
-- conexão utilizando **pdo**
-- utilização de **prepared statements**
-- prevenção contra riscos de **sql injection**
-- utilização de **chaves primárias**
-- utilização de **chaves estrangeiras**
-- restrições de **unicidade**
-- relacionamento entre eleitores e candidatos
+<details>
+<summary>🗳️ <b>gerenciamento de candidatos</b></summary>
 
-essas práticas foram utilizadas para melhorar a organização, segurança e integridade dos dados. :contentReference[oaicite:3]{index=3}
+<br>
+
+➕ cadastro de candidato  
+🔎 consulta de candidato  
+✏️ edição de informações  
+🗑️ exclusão de candidato  
+
+</details>
+
+<br>
+
+<details>
+<summary>🔐 <b>segurança</b></summary>
+
+<br>
+
+o projeto utiliza:
+
+- pdo
+- prepared statements
+- chaves primárias
+- chaves estrangeiras
+- restrições de unicidade
+
+essas práticas foram utilizadas para melhorar a segurança e a integridade dos dados.
+
+</details>
 
 ---
 
-## 🛠️ tecnologias utilizadas
+## 📁 estrutura
 
 <div align="center">
 
-| tecnologia | utilização |
-|---|---|
-| 🐘 **php** | lógica e processamento da aplicação |
-| 🐬 **mysql** | armazenamento e gerenciamento dos dados |
-| 🔗 **pdo** | comunicação entre php e banco de dados |
-| 🔐 **prepared statements** | segurança nas consultas |
-| 🔄 **crud** | gerenciamento dos registros |
-| 📋 **scrum** | organização do desenvolvimento |
+### 🗂️ arquivos do projeto
 
 </div>
 
----
-
-## 🗂️ estrutura do projeto
-
 ```text
-📁 sistema-eleitoral
+💜 sistema-eleitoral
 │
 ├── 📄 .gitattributes
 │
-├── 📄 candidato_excluir.php
-├── 📄 candidato_form.php
-├── 📄 candidatos.php
+├── 🗳️ candidato_excluir.php
+├── 📝 candidato_form.php
+├── 👥 candidatos.php
 │
-├── 📄 config.php
-├── 📄 database.sql
+├── ⚙️ config.php
+├── 🗄️ database.sql
 │
-├── 📄 eleitor_excluir.php
-├── 📄 eleitor_form.php
-├── 📄 eleitores.php
+├── 🗑️ eleitor_excluir.php
+├── 📝 eleitor_form.php
+├── 👤 eleitores.php
 │
-└── 📄 index.php
+└── 🏠 index.php
